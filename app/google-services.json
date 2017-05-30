@@ -1,0 +1,174 @@
+{
+  "project_info": {
+    "project_number": "496023837722",
+    "firebase_url": "https://xpressmartdemo.firebaseio.com",
+    "project_id": "xpressmartdemo",
+    "storage_bucket": "xpressmartdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496023837722:android:e8fb236246c01572",
+        "android_client_info": {
+          "package_name": "com.khanakhazana.application.expressmartdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496023837722-8nlrpf6hb81pe7oeadn18905mda3lvn8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khanakhazana.application.expressmartdemo",
+            "certificate_hash": "9e72fd49068a2daec3eae7b0c88492fce700f133"
+          }
+        },
+        {
+          "client_id": "496023837722-8nui42j4a130vn8jved3btnl643pe9ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkRYojMQOEJRKWbT-gKB5gACybvVr46qQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496023837722-8nui42j4a130vn8jved3btnl643pe9ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496023837722:android:27486ddb590afb7e",
+        "android_client_info": {
+          "package_name": "com.khanakhazana.application.xpressmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496023837722-afo8jmlr1t30g9rmnhif72hke3m0l05k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khanakhazana.application.xpressmart",
+            "certificate_hash": "9e72fd49068a2daec3eae7b0c88492fce700f133"
+          }
+        },
+        {
+          "client_id": "496023837722-8nui42j4a130vn8jved3btnl643pe9ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkRYojMQOEJRKWbT-gKB5gACybvVr46qQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496023837722-8nui42j4a130vn8jved3btnl643pe9ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496023837722:android:4223d28ae005a68f",
+        "android_client_info": {
+          "package_name": "com.example.hp.activitydemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496023837722-8ldnqlvsg2rj8bgotcrn3vaj50154cd7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hp.activitydemo",
+            "certificate_hash": "f46ee6284be25de80e4ae7df8ddaf6f55bffe934"
+          }
+        },
+        {
+          "client_id": "496023837722-8nui42j4a130vn8jved3btnl643pe9ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkRYojMQOEJRKWbT-gKB5gACybvVr46qQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496023837722-8nui42j4a130vn8jved3btnl643pe9ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496023837722:android:373ada18c309295e",
+        "android_client_info": {
+          "package_name": "com.example.madhu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496023837722-8nui42j4a130vn8jved3btnl643pe9ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkRYojMQOEJRKWbT-gKB5gACybvVr46qQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

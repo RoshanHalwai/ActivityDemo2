@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.activitydemo.ReferAndEarn"
+    tools:showIn="@layout/activity_refer_and_earn">
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:scaleType="fitCenter"
+        android:src="@drawable/refer_friend" />
+
+    <TextView
+        android:id="@+id/referFriendLine1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_weight="0"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="For every referral you get Rs. 100 OFF"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/referFriendLine2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Your friend gets a referral coupon of Rs. 100"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/yourReferralCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_weight="0"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Your Referral Code"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/referralCode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_weight="0"
+        android:background="@drawable/rectangle_dash_line"
+        android:text="K2W78"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/shareCode"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_weight="0"
+        android:background="@drawable/my_button_selected_bg"
+        android:fontFamily="serif"
+        android:text="SHARE CODE"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+</LinearLayout>
