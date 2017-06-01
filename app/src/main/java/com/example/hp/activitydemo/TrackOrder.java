@@ -7,12 +7,15 @@ import android.widget.ImageView;
 
 import com.daimajia.numberprogressbar.NumberProgressBar;
 import com.daimajia.numberprogressbar.OnProgressBarListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class TrackOrder extends AppCompatActivity implements OnProgressBarListener {
     ImageView checked1, checked2, checked3, checked4;
+    DatabaseReference databaseItems;
     private Timer timer;
     private NumberProgressBar bnp1, bnp2, bnp3;
 
@@ -20,6 +23,10 @@ public class TrackOrder extends AppCompatActivity implements OnProgressBarListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track_order);
+
+        databaseItems = FirebaseDatabase.getInstance().getReference("Ordered_Items");
+
+        storeUserOrderedItemsInFirebase();
 
         checked1 = (ImageView) findViewById(R.id.check1);
         checked2 = (ImageView) findViewById(R.id.check2);
@@ -67,6 +74,16 @@ public class TrackOrder extends AppCompatActivity implements OnProgressBarListen
                 });
             }
         }, 20 * 1000, 100);
+    }
+
+    private void storeUserOrderedItemsInFirebase() {
+        int i = 1;
+        for (Summary item : MenuFragment.summaryList) {
+            Order order = new Order(item.getItemName(), item.getItemQuantity());
+            String id = "Item" + String.valueOf(i);
+            databaseItems.child(id).setValue(order);
+            i++;
+        }
     }
 
     @Override

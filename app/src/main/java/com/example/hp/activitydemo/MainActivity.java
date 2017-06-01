@@ -156,8 +156,6 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(MainActivity.this, ReferAndEarn.class);
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
-        } else if (itemId == R.id.nav_log_out) {
-            AuthUI.getInstance().signOut(this);
         }
 
         if (fragment != null) {
@@ -181,26 +179,26 @@ public class MainActivity extends AppCompatActivity
             if (MenuFragment.summaryList.size() == 0) {
                 fragment = new MenuFragment();
             } else {
-                displayMessageBox();
+                String title = "New Order";
+                String message = "Are you sure you want to create a " + "\n" +
+                        "new order?" + " Your current order will be lost";
+                displayMessageBox(title, message);
             }
         } else if (id == R.id.nav_account) {
             fragment = new accountFragment();
-        } else if (id == R.id.nav_refer_and_earn) {
+        } else if (id == R  .id.nav_refer_and_earn) {
             Intent i = new Intent(MainActivity.this, ReferAndEarn.class);
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
-        } else if (id == R.id.nav_log_out) {
-            AuthUI.getInstance().signOut(this);
         }
         replaceFragment(fragment);
         return true;
     }
 
-    private void displayMessageBox() {
+    private void displayMessageBox(final String title, String message) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("New Order");
-        builder.setMessage("Are you sure you want to create a " + "\n" +
-                "new order?" + " Your current order will be lost");
+        builder.setTitle(title);
+        builder.setMessage(message);
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -225,6 +223,7 @@ public class MainActivity extends AppCompatActivity
         AlertDialog alert = builder.create();
         alert.show();
     }
+
 
     private void replaceFragment(Fragment fragment) {
         if (fragment != null) {

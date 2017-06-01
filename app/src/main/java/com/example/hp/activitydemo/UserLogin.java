@@ -10,12 +10,13 @@ import com.google.firebase.auth.FirebaseAuth;
 public class UserLogin extends AppCompatActivity {
 
     public static final int RC_SIGN_IN = 1;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
-        FirebaseAuth auth = FirebaseAuth.getInstance();
+        auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser() != null) {
             startActivity(new Intent(getApplicationContext(), Address.class));
         } else {
@@ -35,6 +36,8 @@ public class UserLogin extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == RC_SIGN_IN) {
             if (resultCode == RESULT_OK) {
+                String emailAddress = auth.getCurrentUser().getEmail();
+                String userName = auth.getCurrentUser().getDisplayName();
                 startActivity(new Intent(getApplicationContext(), Address.class));
             }
         }

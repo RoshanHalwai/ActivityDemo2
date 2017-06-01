@@ -4,22 +4,17 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_new_order"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_fiber_new_black_24dp"
             android:title="New Order" />
         <item
             android:id="@+id/nav_account"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_account_circle_black_24dp"
             android:title="Account" />
 
         <item
             android:id="@+id/nav_refer_and_earn"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
             android:title="Refer and Earn" />
-
-        <item
-            android:id="@+id/nav_log_out"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Log Out" />
 
     </group>
 
